@@ -36,7 +36,6 @@ function startWatch(){
                 minutes.innerText= min<10?min='0'+min: min ;
                 seconds.innerText= second<10?second="0"+second: second;
                 hours.innerText= hour<10?hour="0"+hour: hour;
-                console.log(hour,min,second);
         },1000);
     }
 }
