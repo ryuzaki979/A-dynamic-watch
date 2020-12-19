@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/027c69eba4.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <section>
+        <div class="mobile-component">
+            <div class="mobile__outer">
+                <div class="mobile__inner">
+                    <div class="height-part">
+                        <input type="number" name="height-input" class="height__input" id="heightInput" placeholder="Input Your Height in cm">
+                    </div>
+                    <div class="weight-part">
+                        <input type="number" name="weight-input" class="weight__input" id="weightInput" placeholder="Input Your Weight in kg">
+                    </div>
+                    <div class="button-part">
+                        <button class="run-btn btn" id="runButton">Run</button>
+                        <button class="reset-btn btn" id="resetButton">Reset</button>
+                    </div>
+                    <div class="output-part">
+                        <p>
+                            Your BMI is <span id="bmiOutput">______</span>
+                        </p>
+                        
+                        <div class="bmi-status-container">
+                            <span><i class="fas fa-notes-medical" id="medicalNoteIcon"></i></span>
+                            <span id="bmiReport"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
